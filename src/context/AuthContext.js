@@ -25,7 +25,7 @@ export const AuthProvider = ({children}) => {
             const userInfo = response.data;
             return userInfo;
         } catch (error) {
-            alert('Erro na requisição de autenticação de usuário.');
+            alert(error);
         }
     }
 
